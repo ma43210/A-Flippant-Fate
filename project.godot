@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://76wbypue6eee"
+GameManagerScene="*uid://bpp80wthbma8f"
 
 [input]
 
@@ -52,6 +53,7 @@ zoom={
 2d_physics/layer_1="Collision"
 2d_physics/layer_2="Transitions"
 2d_physics/layer_3="Death"
+2d_physics/layer_4="Checkpoints"
 
 [physics]
 

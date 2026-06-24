@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ce7068pi2rmb8" path="res://Scripts/checkpoint_flag.gd" id="1_yqhi3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqhi3"]
-size = Vector2(14, 22)
+size = Vector2(14, 15)
 
 [node name="Flag" type="Area2D" unique_id=1363039729]
 script = ExtResource("1_yqhi3")
@@ -13,5 +13,8 @@ script = ExtResource("1_yqhi3")
 texture = ExtResource("1_chn4m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694637748]
-position = Vector2(-3, -3)
+position = Vector2(-3, 0.5)
 shape = SubResource("RectangleShape2D_yqhi3")
+
+[node name="RespawnPoint" type="Marker2D" parent="." unique_id=1714091113]
+position = Vector2(-3, -3)

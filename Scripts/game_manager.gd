@@ -2,15 +2,12 @@ extends Node
 @export var player_controller : PlayerController
 var checkpoint
 
+
+	
 func _ready():
-	checkpoint = PlayerController.position
-
-
-func set_checkpoint(coordinates):
-	checkpoint = coordinates
+	checkpoint = Vector2(-4, 9)
 
 
 
 func dead():
-	PlayerController.position = checkpoint
-	
+	player_controller.position = checkpoint
