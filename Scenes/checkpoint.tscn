@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b5fblp5tguflx"]
+
+[ext_resource type="Texture2D" uid="uid://b2oc3i72w0sl1" path="res://Sprites/Checkpoint_Flag.png" id="1_chn4m"]
+[ext_resource type="Script" uid="uid://ce7068pi2rmb8" path="res://Scripts/checkpoint_flag.gd" id="1_yqhi3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqhi3"]
+size = Vector2(14, 22)
+
+[node name="Flag" type="Area2D" unique_id=1363039729]
+script = ExtResource("1_yqhi3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1073428301]
+texture = ExtResource("1_chn4m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694637748]
+position = Vector2(-3, -3)
+shape = SubResource("RectangleShape2D_yqhi3")
