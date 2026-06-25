@@ -1,7 +1,7 @@
 extends CollisionShape2D
 @export var player_controller : PlayerController
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if player_controller.flipped:
 		if not position == Vector2(0, -10.5):
 			set_position(Vector2(0, -10.5))

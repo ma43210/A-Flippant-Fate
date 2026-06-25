@@ -119,7 +119,7 @@ player_controller = NodePath("..")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1793595997]
 offset = Vector2(0, -15)
-zoom = Vector2(3.5, 3.5)
+zoom = Vector2(6, 6)
 
 [node name="PlayerAnimator" type="Node2D" parent="." unique_id=881545678 node_paths=PackedStringArray("player_controller", "animation_player", "sprite")]
 script = ExtResource("2_6t5aa")

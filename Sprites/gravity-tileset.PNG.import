@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://deha8yqxhserd"
-path="res://.godot/imported/Serious_Tileset.png-19ae053464d226a6db6c595089b3d351.ctex"
+uid="uid://dtl3yaggjonwm"
+path="res://.godot/imported/gravity-tileset.PNG-ba581ea66f3b18f42df11564b230691d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Serious_Tileset.png"
-dest_files=["res://.godot/imported/Serious_Tileset.png-19ae053464d226a6db6c595089b3d351.ctex"]
+source_file="res://Sprites/gravity-tileset.PNG"
+dest_files=["res://.godot/imported/gravity-tileset.PNG-ba581ea66f3b18f42df11564b230691d.ctex"]
 
 [params]
 

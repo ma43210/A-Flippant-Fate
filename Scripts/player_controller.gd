@@ -16,7 +16,6 @@ var dead = false :
 #const SPEED = 300.0
 #const JUMP_VELOCITY = -400.0
 
-
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if flipped:
@@ -53,4 +52,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func trigger_death():
-	GameManager.dead()
+	if GameManager.checkpoint !=  Vector2(-999, 999):
+		velocity.y = 0
+		flipped = false
+		up_direction = Vector2.UP
+		global_position = GameManager.checkpoint

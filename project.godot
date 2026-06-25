@@ -19,6 +19,12 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://76wbypue6eee"
 GameManagerScene="*uid://bpp80wthbma8f"
+Player="*uid://rtd4kkmvs0yl"
+
+[display]
+
+window/size/mode=2
+window/stretch/mode="canvas_items"
 
 [input]
 
