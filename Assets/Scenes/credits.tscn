@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://djpkquo2ls1n0"]
+
+[node name="Node2D" type="Node2D" unique_id=89866194]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1634863071]
+offset_right = 2023.0
+offset_bottom = 1019.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=48309935]
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 5071.4995
+offset_bottom = 2529.4998
+scale = Vector2(0.4, 0.4)
+bbcode_enabled = true
+text = "[font_size=170]Art:
+Citizen Abel
+Programming and Game Design:
+ma43210 (Thats me!)
+[/font_size]"

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cs0h7iesy00me"]
+
+[ext_resource type="Texture2D" uid="uid://1irtj065fxgk" path="res://Assets/Sprites/Door.png" id="1_aa44o"]
+[ext_resource type="Texture2D" uid="uid://dc7wga7571wkr" path="res://Assets/Sprites/Cap_For_Pedistal.png" id="2_583xk"]
+[ext_resource type="Script" uid="uid://dadwfkw3asw87" path="res://Assets/Scripts/start_button.gd" id="2_gmbkg"]
+[ext_resource type="Texture2D" uid="uid://bjaqb6f8h5qqr" path="res://Assets/Sprites/Pedistal.png" id="3_583xk"]
+
+[node name="Node2D" type="Node2D" unique_id=17218752]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1467173800]
+show_behind_parent = true
+clip_children = 2
+offset_left = -761.0
+offset_top = -578.0
+offset_right = 1055.0
+offset_bottom = 265.0
+color = Color(0.90493286, 0.85121155, 0.47276384, 1)
+
+[node name="Door" type="Sprite2D" parent="." unique_id=623631904]
+position = Vector2(72, -78.00001)
+scale = Vector2(10, 10)
+texture = ExtResource("1_aa44o")
+
+[node name="Button" type="Button" parent="." unique_id=571931638]
+offset_left = -30.0
+offset_top = 18.0
+offset_right = 299.0
+offset_bottom = 68.0
+text = "Put on the Hat and Enter the Door"
+autowrap_mode = 2
+script = ExtResource("2_gmbkg")
+
+[node name="Hat" type="Sprite2D" parent="." unique_id=524875239]
+position = Vector2(215.00002, -201)
+scale = Vector2(10, 10)
+texture = ExtResource("2_583xk")
+
+[node name="Pedistal" type="Sprite2D" parent="." unique_id=1134463550]
+position = Vector2(215.99998, -80.99999)
+scale = Vector2(10, 10)
+texture = ExtResource("3_583xk")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=876997165]
+offset_left = -183.0
+offset_top = -340.0
+offset_right = 1857.0
+offset_bottom = 33.333252
+scale = Vector2(0.3, 0.3)
+bbcode_enabled = true
+text = "[font_size=250]A FLIPPANT FATE[/font_size]"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=722589252]
+position = Vector2(131, -126)
+zoom = Vector2(1.465, 1.465)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
