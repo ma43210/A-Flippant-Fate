@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bun0qhpt4sb8d"]
+
+[ext_resource type="AudioStream" uid="uid://cq3wyep5com6q" path="res://Assets/Music/Flaming_Temper.mp3" id="1_qgepl"]
+[ext_resource type="Script" uid="uid://d33upo7p5itpg" path="res://Assets/Scripts/escape_music.gd" id="2_1pxuk"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=226300393]
+stream = ExtResource("1_qgepl")
+script = ExtResource("2_1pxuk")

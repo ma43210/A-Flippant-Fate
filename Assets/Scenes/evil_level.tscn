@@ -643,7 +643,7 @@ terrain_set_0/terrain_7/color = Color(0.18615687, 0.36997333, 1, 1)
 sources/1 = SubResource("TileSetAtlasSource_0f350")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ooum"]
-size = Vector2(14, 16)
+size = Vector2(14, 15)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dbtun"]
 size = Vector2(353.5, 1158)
@@ -702,7 +702,7 @@ collision_layer = 15
 collision_mask = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=180656770]
-position = Vector2(0, -1)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_2ooum")
 script = ExtResource("6_2ooum")
 

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dtl3yaggjonwm" path="res://Assets/Sprites/gravity-tileset.PNG" id="4_wqkje"]
 [ext_resource type="Script" uid="uid://bgty35pbybsb8" path="res://Assets/Scripts/text_spin.gd" id="5_wqkje"]
 [ext_resource type="Texture2D" uid="uid://1irtj065fxgk" path="res://Assets/Sprites/Door.png" id="6_0f350"]
+[ext_resource type="AudioStream" uid="uid://c4fsjkb2n4dhq" path="res://Assets/Music/Flaming-Cobbles.mp3" id="7_x4t65"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0f350"]
 texture = ExtResource("4_wqkje")
@@ -719,3 +720,7 @@ shape = SubResource("RectangleShape2D_81xng")
 [node name="Door" type="Sprite2D" parent="." unique_id=1219997017]
 position = Vector2(-9, -56)
 texture = ExtResource("6_0f350")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1472990689]
+stream = ExtResource("7_x4t65")
+autoplay = true
